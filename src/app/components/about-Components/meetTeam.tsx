@@ -49,14 +49,15 @@ const MeetTeam: React.FC = () => {
   ];
 
   return (
-    <section className="py-16 bg-white">
+    <section className="py-16 bg-white relative">
       <h2 className="text-center text-[40px] font-bold mb-20 text-[#252B42]">
         Meet Our Team
       </h2>
       <p className="text-sm text-[#737373] font-normal text-center -mt-20 mb-20">
-      Problems trying to resolve the conflict between <br />
-      the two major realms of Classical physics: Newtonian mechanics 
+        Problems trying to resolve the conflict between <br />
+        the two major realms of Classical physics: Newtonian mechanics
       </p>
+      {/* Team Member Grid */}
       <div className="grid grid-cols-1 sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-3 gap-2 px-36">
         {teamMembers.map((member, index) => (
           <div key={index} className="text-center">
@@ -88,6 +89,14 @@ const MeetTeam: React.FC = () => {
             </div>
           </div>
         ))}
+      </div>
+      {/* "View All Team Members" Button */}
+      <div className="flex justify-center mt-16">
+        <Link href="/team">
+          <button className="bg-[#23A6F0] text-sm text-white py-2 px-6 rounded-lg shadow-md hover:bg-[#1c8ec6] transition duration-300">
+            View All Team Members
+          </button>
+        </Link>
       </div>
     </section>
   );
