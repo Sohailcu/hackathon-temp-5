@@ -13,7 +13,6 @@ function Header() {
         <div className="flex items-center">
           <h1 className="text-4xl text-[#252B42] font-bold ml-6">Bandage</h1>
         </div>
-
         {/* Action Icons (Mobile and Desktop) */}
         <div className="flex items-center gap-4 md:hidden">
           <FiSearch className="text-2xl text-[#252B42] cursor-pointer" />
@@ -58,7 +57,6 @@ function Header() {
             </li>
           </ul>
         </div>
-
         {/* Right Side: Login/Register and Icons */}
         <div className="hidden md:flex items-center gap-x-4 mr-4">
           {/* Login/Register */}
