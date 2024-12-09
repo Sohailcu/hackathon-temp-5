@@ -8,7 +8,7 @@ function Categories() {
     <div className="bg-white py-16">
       {/* Heading Section */}
       <div className="text-center mb-12">
-        <h2 className="text-3xl lg:text-4xl font-bold font-Montserrat text-gray-900 uppercase">
+        <h2 className="text-3xl lg:text-4xl font-bold font-Montserrat text-[#252B42] uppercase">
           Editor&apos;s Pick
         </h2>
         <p className="text-gray-600 text-sm mt-2 font-Montserrat">
@@ -24,11 +24,11 @@ function Categories() {
           <Image
             src="/images/Category/catgeory-Mens.jpg" // Replace with your image path
             alt="men"
-            width={400}
-            height={400}
+            width={510}
+            height={500}
             className="w-full h-full object-cover rounded-md"
           />
-          <button className="absolute top-[434px] left-[101px] transform -translate-x-1/2 bg-white px-[50px] py-[10px] shadow-md font-Montserrat font-bold text-[#252B42] text-[16px] leading-[24px] hover:bg-gray-100">
+          <button className="absolute top-[434px] left-[101px] transform -translate-x-1/2 bg-white px-[50px] py-[10px] shadow-md font-Montserrat font-bold text-[#252B42] text-[16px] leading-[24px] hover:bg-gray-100 hover:text-gray-900">
             MEN
           </button>
         </div>
@@ -37,11 +37,11 @@ function Categories() {
           <Image
             src="/images/Category/catgeory-women.jpg" // Replace with your image path
             alt="women"
-            width={100}
-            height={100}
+            width={240}
+            height={500}
             className="w-full h-full object-cover"
           />
-          <button className="absolute top-[434px] left-[21px] w-[136px] h-[48px] px-[48px] py-[12px] flex items-center justify-center gap-[10px] bg-white shadow-md">
+          <button className="absolute top-[434px] left-[21px] w-[136px] h-[48px] px-[48px] py-[12px] flex items-center justify-center gap-[10px] bg-white shadow-md hover:bg-gray-100 hover:text-gray-900">
             <h2 className="font-Montserrat font-bold text-[16px] leading-[24px] text-[#252B42]">
               WOMEN
             </h2>
@@ -54,11 +54,11 @@ function Categories() {
             <Image
               src="/images/Category/catgeory-access.jpg" // Replace with your image path
               alt="Accessories"
-              width={100}
-              height={100}
+              width={240}
+              height={242}
               className="w-full h-full object-cover"
             />
-            <button className="absolute top-[180px] left-[20px] w-[136px] h-[48px] px-[24px] py-[12px] flex items-center justify-center gap-[10px] bg-white  shadow-md">
+            <button className="absolute top-[180px] left-[20px] w-[136px] h-[48px] px-[24px] py-[12px] flex items-center justify-center gap-[10px] bg-white shadow-md hover:bg-gray-100 hover:text-gray-900">
               <h2 className="font-Montserrat font-bold text-[16px] leading-[24px] text-[#252B42]">
                 ACCESSORIES
               </h2>
@@ -69,11 +69,11 @@ function Categories() {
             <Image
               src="/images/Category/catgeory-boys.jpg" // Replace with your image path
               alt="Kids"
-              width={100}
-              height={100}
+              width={240}
+              height={242}
               className="w-full h-full object-cover"
             />
-            <button className="absolute top-[180px] left-[20px] w-[136px] h-[48px] px-[24px] py-[12px] flex items-center justify-center gap-[10px] bg-white shadow-md">
+            <button className="absolute top-[180px] left-[20px] w-[136px] h-[48px] px-[24px] py-[12px] flex items-center justify-center gap-[10px] bg-white shadow-md hover:bg-gray-100 hover:text-gray-900">
               <h2 className="font-Montserrat font-bold text-[16px] leading-[24px] text-[#252B42]">
                 KIDS
               </h2>

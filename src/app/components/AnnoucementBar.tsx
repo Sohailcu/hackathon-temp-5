@@ -10,7 +10,7 @@ const Navbar = () => {
                     {/* Phone Icon and Number */}
                     <FaPhoneAlt className="h-3 w-3 text-white" />
                     <span>(225) 555-0118</span>
-                    
+
                     {/* Space between Phone and Email */}
                     <span className="mx-2">|</span>
 
@@ -28,7 +28,7 @@ const Navbar = () => {
                     Follow Us :
                 </h1>
 
-                <span className="flex items-center space-x-4">
+                <span className="flex items-center space-x-4 ml-2">
                     {/* Social Media Icons */}
                     <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
                         <FaInstagram className="h-[18px] w-[18px] text-white hover:text-pink-500" />

@@ -4,7 +4,7 @@ import Image from 'next/image';
 export default function GreenDiv() {
     return (
         <div
-            className="hero min-h-screen flex items-center w-full h-[432px] px-6 py-0"
+            className="hero min-h-screen flex items-center w-full h-[432px] px-6 py-0 -mt-20"
             style={{
                 backgroundImage: "url('/images/Hero/carouselgreen.png')", // Replace with your image path
                 backgroundSize: "cover",

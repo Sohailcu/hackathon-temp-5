@@ -6,11 +6,11 @@ function BestSeller() {
     <div>
       <div className="bg-white py-16">
         {/* Heading Section */}
-        <div className="text-center mb-12">
+        <div className="text-center">
           <p className="text-gray-600 text-md mt-2 font-Montserrat">
             Featured Products
           </p>
-          <h2 className="text-xl lg:text-2xl font-bold text-gray-900 uppercase font-Montserrat mt-3">
+          <h2 className="text-xl lg:text-2xl font-bold text-[#252B42] uppercase font-Montserrat mt-3">
             Best Seller Products
           </h2>
           <p className="text-gray-600 text-md mt-2 font-Montserrat">

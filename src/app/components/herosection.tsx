@@ -25,7 +25,7 @@ function HeroSection() {
             We know how large objects will act, <br />but things on a small scale.
           </p>
           <button className="px-10 py-3 text-md font-semibold text-white bg-green-500 rounded-sm shadow-lg hover:bg-green-600 transition duration-200">
-            Shop Now    
+            Shop Now
           </button>
         </div>
       </div>
