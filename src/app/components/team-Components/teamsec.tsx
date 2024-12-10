@@ -153,7 +153,7 @@ const TeamSection: React.FC = () => {
           </div>
         ))}
       </div>
-
+        {/* Start Free Trial Section */}
       <div className="py-16 bg-[#FFFFFF] text-center mt-20">
         <h2 className="text-[40px] font-bold text-[#252B42]">
           Start your 14 days free trial
