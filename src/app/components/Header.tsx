@@ -36,7 +36,7 @@ function Header() {
               <Link href="/">Home</Link>
             </li>
             <li className="relative group p-4 hover:underline underline-offset-2 hover:text-[#23A6F0]">
-              <Link href="/shop" className="flex items-center justify-between w-full">
+              <Link href="/cart" className="flex items-center justify-between w-full">
                 <span>Shop</span>
                 <span className="ml-2 group-hover:text-[#23A6F0] transition-all">
                   <FiChevronDown />
@@ -53,7 +53,7 @@ function Header() {
               <Link href="/contact">Contact</Link>
             </li>
             <li className="p-4 hover:underline underline-offset-2 hover:text-[#23A6F0]">
-              <Link href="/pages">Pages</Link>
+              <Link href="/product">Pages</Link>
             </li>
           </ul>
         </div>
