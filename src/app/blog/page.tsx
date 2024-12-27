@@ -107,7 +107,7 @@ const BlogPage = () => {
               Practice Advice
             </p>
             <h2 className="text-2xl lg:text-3xl font-bold text-[#252B42] font-Montserrat mt-3 capitalize">
-              Featured "BLOGS" Posts
+              Featured BLOGS Posts
             </h2>
             <p className="text-[#737373] text-sm font-light mt-2 font-Montserrat">
               Problems trying to resolve the conflict between <br />
