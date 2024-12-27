@@ -1,48 +1,47 @@
 import React from 'react';
-import { FaPhoneAlt, FaEnvelope } from 'react-icons/fa'; // Correct import for FontAwesome icons
+import { FaPhoneAlt, FaEnvelope } from 'react-icons/fa'; // Import for icons
 import { FaFacebook, FaTwitter, FaInstagram, FaYoutube } from 'react-icons/fa'; // Social media icons
 
 const Navbar = () => {
     return (
-        <div className="w-full h-[58px] bg-[#252B42] text-white">
-            <div className="flex justify-between items-center px-4 py-4 text-sm">
-                <span className="flex items-center space-x-4">
-                    {/* Phone Icon and Number */}
-                    <FaPhoneAlt className="h-3 w-3 text-white" />
+        <div className="w-full bg-[#252B42] text-white">
+            <div className="flex flex-col sm:flex-row justify-between items-center px-4 py-4 text-sm">
+                {/* Contact Info */}
+                <div className="flex items-center space-x-2 sm:space-x-4">
+                    <FaPhoneAlt className="h-4 w-4" />
                     <span>(225) 555-0118</span>
 
-                    {/* Space between Phone and Email */}
-                    <span className="mx-2">|</span>
+                    <span className="hidden sm:inline">|</span>
 
-                    {/* Email Icon and Email */}
-                    <FaEnvelope className="h-3 w-3 text-white" />
+                    <FaEnvelope className="h-4 w-4" />
                     <span>michelle.rivera@example.com</span>
-                </span>
+                </div>
 
-                {/* Follow Us text */}
-                <h1 className="flex justify-center text-center gap-10 ml-10 mr-10">
-                    Follow Us and Get a chance to Win up to 80% off
-                </h1>
+                {/* Follow Us Text */}
+                <div className="mt-2 sm:mt-0 text-center flex flex-col sm:flex-row items-center sm:space-x-4">
+                    <p className="text-xs sm:text-sm md:text-base">
+                        Follow Us and Get a chance to Win up to 80% off
+                    </p>
+                </div>
 
-                <h1 className="flex justify-center text-center gap-10 ml-10 -mr-36 font-semibold">
-                    Follow Us :
-                </h1>
-
-                <span className="flex items-center space-x-4 ml-2">
-                    {/* Social Media Icons */}
+                {/* Social Media Icons */}
+                <div className="flex items-center space-x-4 mt-2 sm:mt-0">
+                    <span className="text-sm font-semibold hidden md:block">
+                        Follow Us:
+                    </span>
                     <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
-                        <FaInstagram className="h-[18px] w-[18px] text-white hover:text-pink-500" />
+                        <FaInstagram className="h-5 w-5 hover:text-pink-500" />
                     </a>
                     <a href="https://youtube.com" target="_blank" rel="noopener noreferrer">
-                        <FaYoutube className="h-[18px] w-[18px] text-white hover:text-red-500" />
+                        <FaYoutube className="h-5 w-5 hover:text-red-500" />
                     </a>
                     <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
-                        <FaFacebook className="h-[18px] w-[18px] text-white hover:text-blue-500" />
+                        <FaFacebook className="h-5 w-5 hover:text-blue-500" />
                     </a>
                     <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
-                        <FaTwitter className="h-[18px] w-[18px] text-white hover:text-blue-400" />
+                        <FaTwitter className="h-5 w-5 hover:text-blue-400" />
                     </a>
-                </span>
+                </div>
             </div>
         </div>
     );
