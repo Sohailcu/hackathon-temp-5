@@ -1,6 +1,7 @@
+"use client"
 /* eslint-disable @next/next/no-img-element */
 import { client } from '@/sanity/lib/client';
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 
 async function getData() {
   const fetchData = await client.fetch(`*[_type == 'product'] {
@@ -16,8 +17,23 @@ async function getData() {
   return fetchData;
 }
 
-const BestSeller = async () => {
-  const data = await getData();
+const BestSeller = () => {
+  const [data, setData] = useState<any[]>([]);
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    const fetchData = async () => {
+      const fetchedData = await getData();
+      setData(fetchedData);
+      setLoading(false); // Stop the loading state once data is fetched
+    };
+
+    fetchData();
+  }, []);
+
+  if (loading) {
+    return <div>Loading...</div>; // Show loading text until data is fetched
+  }
 
   return (
     <div className="bg-white py-16 mb-16">
