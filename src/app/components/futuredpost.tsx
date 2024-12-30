@@ -2,7 +2,7 @@
 import React from 'react';
 import { IoIosArrowForward } from 'react-icons/io';
 
-const blogData = [
+const FutureData = [
     {
         id: 1,
         image: '/images/future/FUT-1.png',
@@ -55,7 +55,7 @@ function Futuredpost() {
                     </div>
                     {/* Blog Posts */}
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                        {blogData.map((post) => (
+                        {FutureData.map((post) => (
                             <div
                                 key={post.id}
                                 className="p-4 bg-white shadow-md rounded-lg transition-all hover:scale-105"
@@ -104,7 +104,7 @@ function Futuredpost() {
                                 </div>
                                 <div>
                                     <a
-                                        href="#"
+                                        href="/blog"
                                         className="text-[#737373] text-sm font-semibold font-Montserrat inline-flex items-center mt-6"
                                     >
                                         Learn More
